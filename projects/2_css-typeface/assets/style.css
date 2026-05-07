@@ -1,0 +1,722 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 18vw);
+  gap: 1vw;
+  justify-content: center;
+  margin-top: 7vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.letterbox {
+  width: 18vw;
+  height: 18vw;
+  border: 0px solid black;
+  overflow: hidden;
+}
+
+/* Letter o */
+
+#o1 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 50%;
+  display: grid;
+  /* justify-items: center;
+  align-items: center; */
+  place-items: center;
+}
+
+#o2 {
+  width: 40%;
+  height: 40%;
+  background-color: white;
+}
+
+#letter-o:hover #o1 {
+  background-color: blue;
+  transition: background-color 0.3s;
+}
+
+#letter-o:hover #o2 {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes myAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  Letter D */
+
+#letter-d {
+  position: relative;
+}
+
+#d1 {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  background-color: black;
+  position: absolute;
+}
+
+#d1a {
+  width: 10%;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transition: transform 0.25s ease;
+}
+
+#d1a2 {
+  width: 10%;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transition: transform 0.27s ease-out;
+}
+
+#d1b {
+  width: 30%;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  transition: transform 0.25s ease;
+}
+
+#d2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: -10;
+}
+
+#letter-d:hover #d1 {
+  background-color:blue;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover #d2 {
+  background-color:blue;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover #d1b {
+  transform: translateX(-100%);
+}
+
+#letter-d:hover #d1a {
+  transform: translateX(300%);
+}
+
+#letter-d:hover #d1a2 {
+  transform: translateX(500%);
+}
+
+/*  Letter n */
+
+#letter-n {
+  position: relative;
+}
+
+#n1 {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  right: 0%;
+}
+
+#n3 {
+  position:absolute;
+  height: 60%;
+  width: 10%;
+  background-color: white;
+  left: 50%;
+  transition: transform 0.25s ease;
+}
+
+#n4 {
+  position: absolute;
+  height: 30%;
+  width: 10%;
+  background-color: white;
+  right: 50%;
+  bottom: 0%;
+  transition: transform 0.25s ease;
+}
+
+#letter-n:hover #n1{
+  background-color:blue;
+  transition: background-color 0.3s;
+}
+
+#letter-n:hover #n3{
+  transform: translateY(-200%);
+}
+#letter-n:hover #n4{
+  transform: translateY(200%);
+}
+
+
+
+
+/*  Letter a */
+
+#letter-a {
+  position: relative;
+}
+
+#a1 {
+  position: absolute;
+  height: 60%;
+  width: 40%;
+  background-color: black;
+  left: 0%;
+  bottom: 0%;
+  transition: background-color 0.1s ease;
+}
+
+#a2 {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  background-color: black;
+  border-top-left-radius: 100%;
+  top: 0%;
+  left: 0%;
+  transition: background-color 0.1s ease;
+}
+
+#a3 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background-color: black;
+  top: 30%;
+  left: 40%;
+  transition: transform 0.25s ease, background-color 0.1s ease;;
+}
+
+#a7 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  background-color: black;
+  top: -20%;
+  left: 40%;
+  transition: transform 0.25s ease, background-color 0.1s ease;;
+}
+
+#a4 {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  background-color: black;
+  top: 0%;
+  left: 60%;
+  transition: background-color 0.1s ease;
+}
+
+#a5 {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  background-color: black;
+  top: 0%;
+  right: 0%;
+  transition: background-color 0.1s ease;
+}
+
+#a6 {
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  background-color: black;
+  bottom: 0%;
+  right: 0%;
+  transition: background-color 0.1s ease;
+}
+
+#a8 {
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  background-color: black;
+  bottom: 40%;
+  right: -40%;
+  transition: transform 0.3s ease, background-color 0.1s ease;
+}
+
+#letter-a:hover #a3{
+  transform: translateY(250%);
+  background-color: blue;
+}
+
+#letter-a:hover #a7{
+  transform: translateY(100%);
+  background-color: blue;
+}
+
+#letter-a:hover #a8{
+  transform: translateX(-100%);
+  background-color: blue;
+}
+
+#letter-a:hover #a1,
+#letter-a:hover #a2,
+#letter-a:hover #a4,
+#letter-a:hover #a5,
+#letter-a:hover #a6{
+  background-color: blue;
+}
+
+/*  Letter E */
+
+#letter-e {
+  position: relative;
+}
+
+#e1 {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  left: 0%;
+  bottom: 0%;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#e2 {
+  position: absolute;
+  height: 30%;
+  width: 50%;
+  background-color: black;
+  top: 0%;
+  left: 50%;
+  transition: transform 0.35s ease, background-color 0.25s ease;
+}
+
+#e3 {
+  position: absolute;
+  height: 30%;
+  width: 50%;
+  background-color: black;
+  bottom: 0%;
+  left: 50%;
+  transition: transform 0.45s ease, background-color 0.25s ease;
+}
+
+#e4 {
+  position: absolute;
+  height: 10%;
+  width: 20%;
+  background-color: black;
+  bottom: 50%;
+  left: 50%;
+  transition: transform 0.55s ease, background-color 0.25s ease;
+}
+
+#letter-e:hover #e1{
+  transform: translateX(100%);
+  background-color: blue;
+}
+
+#letter-e:hover #e2{
+  transform: translateX(-100%);
+  background-color: blue;
+}
+
+#letter-e:hover #e3{
+  transform: translateX(-100%);
+  background-color: blue;
+}
+
+#letter-e:hover #e4{
+  transform: translateX(-100%);
+  background-color: blue;
+}
+/*  Letter e */
+
+#letter-Ee {
+  position: relative;
+}
+
+#Ee1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 100%;
+  transition: background-color 0.25s;
+}
+
+#Ee2 {
+  position: absolute;
+  height: 10%;
+  width: 80%;
+  background-color: white;
+  top: 50%;
+  left: 20%;
+  transition:cubic-bezier(0.23, 1, 0.320, 1) transform 0.35s;
+}
+
+#letter-Ee:hover #Ee2{
+  transform: translateX(100%);
+}
+
+#letter-Ee:hover #Ee1{
+  background-color: blue;
+}
+/*  Letter G */
+
+#letter-G {
+  position: relative;
+}
+
+#G1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 100%;
+  transition: background-color 0.25s ease;
+}
+
+#G2 {
+  position: absolute;
+  height: 10%;
+  width: 200%;
+  background-color: white;
+  top: 50%;
+  left: 20%;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#G3 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  right: 0%;
+  bottom: 0%;
+  transition: transform 0.3s ease, background-color 0.25s ease;
+}
+
+#letter-G:hover #G2{
+  transform: translateX(-50%);
+}
+
+#letter-G:hover #G3{
+  transform: translateX(-100%);
+  background-color: blue;
+}
+
+#letter-G:hover #G1{
+  background-color: blue;
+}
+
+
+/*  Letter Gg */
+#letter-Gg {
+  position: relative;
+}
+
+#Gg1 {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  bottom: 0%;
+  left: 20%;
+  background-color: black;
+  transition: border-bottom-right-radius 0.25s ease, background-color 0.25s ease;
+}
+
+#Gg6 {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  bottom: 0%;
+  left: 0%;
+  background-color: black;
+  transition: background-color 0.25s ease;
+}
+
+#Gg3 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  right: 0%;
+  top: 0%;
+  background-color: black;
+  transition: border-bottom-right-radius 0.2s ease, border-top-right-radius 0.25s, background-color 0.25s ease;
+}
+
+#Gg4 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 0%;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 100%;
+  background-color: black;
+  transition: border-bottom-left-radius 0.3s ease, border-top-left-radius 0.25s ease, background-color 0.25s ease;
+}
+
+#Gg5 {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  right: 0%;
+  bottom: 0%;
+  border-bottom-right-radius: 100%;
+  background-color: black;
+  transition: border-bottom-right-radius 0.2s ease, border-top-left-radius 0.25s ease, background-color 0.25s ease;
+}
+
+#letter-Gg:hover #Gg4{
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  background-color: blue;
+}
+
+#letter-Gg:hover #Gg5{
+  border-bottom-right-radius: 0%;
+  border-top-left-radius: 100%;
+  background-color: blue;
+}
+
+#letter-Gg:hover #Gg3{
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: blue;
+}
+
+#letter-Gg:hover #Gg1{
+  border-bottom-right-radius: 100%;
+  background-color: blue;
+}
+
+#letter-Gg:hover #Gg6{
+  background-color: blue;
+}
+
+
+/*  Letter H */
+#letter-h {
+  position: relative;
+}
+
+#h1{
+  height: 100%;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+
+#h2{
+  height: 40%;
+  width: 40%;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+
+#h3{
+  height: 40%;
+  width: 40%;
+  right: 0;
+  bottom: 40%;
+  background-color: black;
+  position: absolute;
+  transition: border-top-right-radius 0.3s ease, background-color 0.25s ease;
+}
+
+#h4{
+  height: 20%;
+  width: 40%;
+  right: 0;
+  bottom: 80%;
+  background-color: black;
+  position: absolute;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#h5{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  background-color: black;
+  transition: transform 0.15s ease, background-color 0.25s ease;
+}
+
+#h6{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  background-color: black;
+  transition: transform 0.15s ease, background-color 0.25s ease;
+}
+
+#h7{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  background-color: black;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#h8{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  background-color: black;
+  transition: transform 0.35s ease, background-color 0.25s ease;
+}
+
+#letter-h:hover #h4{
+  transform: translateY(300%);
+  background-color: blue;
+}
+
+#letter-h:hover #h3{
+  border-top-right-radius: 100%;
+  background-color: blue;
+}
+
+#letter-h:hover #h5{
+  transform: translateY(-200%);
+  background-color: blue;
+}
+
+#letter-h:hover #h7{
+  transform: translateY(200%);
+  background-color: blue;
+}
+
+#letter-h:hover #h8{
+  transform: translateY(400%);
+  background-color: blue;
+}
+
+#letter-h:hover #h1{
+  background-color: blue;
+}
+
+#letter-h:hover #h2{
+  background-color: blue;
+}
+
+#letter-h:hover #h6{
+  background-color: blue;
+}
+
+
+/*  Letter T */
+#letter-t {
+  position: relative;
+}
+
+#t1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  transition: background-color 0.25s ease;
+}
+
+#t2{
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  left: 0%;
+  top: 20%;
+  background-color: white;
+  transition:cubic-bezier(0.165, 0.84, 0.44, 1) transform 0.65s, background-color 0.25s ease;
+}
+
+#t3{
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  right: 0%;
+  top: 20%;
+  background-color: white;
+  transition:cubic-bezier(0.215, 0.610, 0.355, 1) transform 0.55s, background-color 0.25s ease;
+}
+
+#t4{
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  left: 0%;
+  bottom: 0%;
+  background-color: white;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.65s, background-color 0.25s ease;
+}
+
+#t5{
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  right: 0%;
+  bottom: 0%;
+  background-color: white;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.65s, background-color 0.25s ease;
+}
+
+#letter-t:hover #t2{
+transform: translateX(250%);
+}
+
+#letter-t:hover #t3{
+transform: translateX(-250%);
+}
+
+#letter-t:hover #t4{
+transform: translateX(400%);
+}
+
+#letter-t:hover #t5{
+transform: translateX(-400%);
+}
+
+#letter-t:hover #t1{
+  background-color: blue;
+}
